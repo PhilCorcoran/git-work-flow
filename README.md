@@ -7,7 +7,7 @@ Create the repository and the feature branches. Initialize the repository with a
 
 ![alt text](images/gitflow1.jpg "Stage 1. Setup repo")
 ##2. Develop
-Developers create branches, code and merge
+Developers Tom &amp; Jerry create branches, write code and merge
 
 ![alt text](images/gitflow2.jpg "Stage 2. Developing")
 ##3. Release
