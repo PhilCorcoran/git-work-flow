@@ -4,13 +4,15 @@ Demonstrates what happens in a typical development workflow using [Vincent Dries
 Describes the development process in 3 stages
 ##1. Setup repository
 Create the repository and the feature branches. Initialize the repository with a `README.md`. Everything happens on the server here.
-
 ![alt text](images/gitflow1.jpg "Stage 1. Setup repo")
+[Full size image](images/gitflow1.jpg "Stage 1. Setup repo full size")
 ##2. Develop
 Developers Tom &amp; Jerry create branches, write code and merge
 
 ![alt text](images/gitflow2.jpg "Stage 2. Developing")
+[Full size image](images/gitflow2.jpg "Stage 1. Setup repo full size")
 ##3. Release
 Release preparation is begun. Developers submit major bug fixes. Final production release is merged into `master` branch and tagged.
 
 ![alt text](images/gitflow3.jpg "Stage 3. Releasing")
+[Full size image](images/gitflow3.jpg "Stage 1. Setup repo full size")
