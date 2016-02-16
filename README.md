@@ -16,3 +16,23 @@ Release preparation is begun. Developers submit major bug fixes. Final productio
 
 ![alt text](images/gitflow3.jpg "Stage 3. Releasing")
 [Full size image](https://raw.githubusercontent.com/PhilCorcoran/git-work-flow/master/images/gitflow3.jpg)
+
+## Commands
+The following commands are used during the workflow. Any word prefixed with `$` is a variable such as the url of the git repository `$git_repo_url`
+* git clone $git_repo_url
+* git remote -v update 
+* git status
+* git merge $working_branch -m $merge_commit_message
+* git checkout -b $working_branch_name
+* git branch -rv
+* git add -A
+* git commit -m $commit_message
+* git log #shows latest commit first
+* git diff origin/$branch_name
+* git pull origin $branch_name
+* git push origin
+* git checkout $release_branch -b $release_branch_bugs
+* git tag -a $release_name $commit_hash -m $tag_comment
+* git push origin --tags
+* git tag -l
+
