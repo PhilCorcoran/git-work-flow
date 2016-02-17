@@ -37,7 +37,8 @@ The following commands are used during the workflow. Any word prefixed with `$` 
 | git pull origin $branch                            | remote --> local |
 | git push origin                                    | local--> remote  |
 | git checkout $release_branch -b $local_branch      | local            |
-| git push origin --tags                             | local --> remote |
 | git tag -l                                         | local            |
+| git tag -a $release_name $commit_hash -m $tag_message | local            |
+| git push origin --tags                             | local --> remote |
 | git reset --hard origin/master                     | remote --> local |
 
