@@ -19,20 +19,23 @@ Release preparation is begun. Developers submit major bug fixes. Final productio
 
 ## Commands
 The following commands are used during the workflow. Any word prefixed with `$` is a variable such as the url of the git repository `$git_repo_url`
-* git clone $git_repo_url
-* git remote -v update 
-* git status
-* git merge $working_branch -m $merge_commit_message
-* git checkout -b $working_branch_name
-* git branch -rv
-* git add -A
-* git commit -m $commit_message
-* git log #shows latest commit first
-* git diff origin/$branch_name
-* git pull origin $branch_name
-* git push origin
-* git checkout $release_branch -b $release_branch_bugs
-* git tag -a $release_name $commit_hash -m $tag_comment
-* git push origin --tags
-* git tag -l
+| Command                                            | Where            |
+|:---------------------------------------------------|:-----------------|
+| git clone $git_repo_url $working_branch            | remote --> local |
+| git remote -v update                               | remote --> local |
+| git status                                         | local            |
+| git merge $working_branch -m $merge_commit_message | local            |
+| git checkout $branch -b $new_branch                | local            |
+| git branch -rv                                     | remote           |
+| git add -A                                         | local            |
+| git commit -m $commit_message                      | local            |
+| git log                                            | local            |
+| git log $remote_repo/$remote_branch                | remote           |
+| git diff origin/$branch                            | remote & local   |
+| git pull origin $branch                            | remote --> local |
+| git push origin                                    | local--> remote  |
+| git checkout $release_branch -b $local_branch      | local            |
+| git push origin --tags                             | local --> remote |
+| git tag -l                                         | local            |
+| git reset --hard origin/master                     | remote --> local |
 
