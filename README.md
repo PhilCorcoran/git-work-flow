@@ -22,7 +22,7 @@ The following commands are used during the workflow. Any word prefixed with `$` 
 
 | Command                                            | Where            |
 |:---------------------------------------------------|:-----------------|
-| git clone $git_repo_url $working_branch            | remote --> local |
+| git clone $git_repo_url --branch $branch           | remote --> local |
 | git remote -v update                               | remote --> local |
 | git status                                         | local            |
 | git merge $working_branch -m $merge_commit_message | local            |
