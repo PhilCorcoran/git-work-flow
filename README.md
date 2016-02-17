@@ -19,6 +19,7 @@ Release preparation is begun. Developers submit major bug fixes. Final productio
 
 ## Commands
 The following commands are used during the workflow. Any word prefixed with `$` is a variable such as the url of the git repository `$git_repo_url`
+
 | Command                                            | Where            |
 |:---------------------------------------------------|:-----------------|
 | git clone $git_repo_url $working_branch            | remote --> local |
