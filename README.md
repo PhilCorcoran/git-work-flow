@@ -32,6 +32,7 @@ The following commands are used during the workflow. Any word prefixed with `$` 
 | git commit -m $commit_message                      | local            |
 | git log                                            | local            |
 | git log $remote_repo/$remote_branch                | remote           |
+| git show $commit_hash                              | local            |
 | git diff origin/$branch                            | remote & local   |
 | git pull origin $branch                            | remote --> local |
 | git push origin                                    | local--> remote  |
