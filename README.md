@@ -27,7 +27,7 @@ The following commands are used during the workflow. Any word enclosed in bracke
 | git status                                                                 | local            | check for local changes     |
 | git merge &lt;working_branch &gt; -m &lt;merge_commit_message&gt;          | local            | merge branches              |
 | git checkout &lt;branch&gt; -b &lt;new_branch&gt;                          | local            | chekout into new branch     |
-| git branch -rv                                                             | remote           | list remote branches        |
+| git branch -a                                                              | remote & local   | list all branches           |
 | git add -A                                                                 | local            | add all files to commit     |
 | git commit -m &lt;commit_message&gt;                                       | local            | commit my changes           |
 | git log                                                                    | local            | check the commit log        |
