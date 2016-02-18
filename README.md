@@ -18,27 +18,26 @@ Release preparation is begun. Developers submit major bug fixes. Final productio
 [Full size image](https://raw.githubusercontent.com/PhilCorcoran/git-work-flow/master/images/gitflow3.jpg)
 
 ## Commands
-The following commands are used during the workflow. Any word prefixed with `$` is a variable such as the url of the git repository `$git_repo_url`
+The following commands are used during the workflow. Any word enclosed in brackets &lt; &gt; is a variable such as the url of the git repository &lt;git_repo_url&gt;
 
-| Command                                            | Where            |
-|:---------------------------------------------------|:-----------------|
-| git clone $git_repo_url --branch $branch           | remote --> local |
-| git remote -v update                               | remote --> local |
-| git status                                         | local            |
-| git merge $working_branch -m $merge_commit_message | local            |
-| git checkout $branch -b $new_branch                | local            |
-| git branch -rv                                     | remote           |
-| git add -A                                         | local            |
-| git commit -m $commit_message                      | local            |
-| git log                                            | local            |
-| git log $remote_repo/$remote_branch                | remote           |
-| git show $commit_hash                              | local            |
-| git diff origin/$branch                            | remote & local   |
-| git pull origin $branch                            | remote --> local |
-| git push origin                                    | local--> remote  |
-| git checkout $release_branch -b $local_branch      | local            |
-| git tag -l                                         | local            |
-| git tag -a $release_name $commit_hash -m $tag_message | local            |
-| git push origin --tags                             | local --> remote |
-| git reset --hard origin/master                     | remote --> local |
+| Command                                                                    | Where            | What                        |
+|:---------------------------------------------------------------------------|:-----------------|-----------------------------|
+| git clone &lt;git_repo_url&gt; &lt;working_branch&gt;                      | remote --> local | copy the repo               |
+| git remote -v update                                                       | remote --> local | check for remote updates    |
+| git status                                                                 | local            | check for local changes     |
+| git merge &lt;working_branch &gt; -m &lt;merge_commit_message&gt;          | local            | merge branches              |
+| git checkout &lt;branch&gt; -b &lt;new_branch&gt;                          | local            | chekout into new branch     |
+| git branch -rv                                                             | remote           | list remote branches        |
+| git add -A                                                                 | local            | add all files to commit     |
+| git commit -m &lt;commit_message&gt;                                       | local            | commit my changes           |
+| git log                                                                    | local            | check the commit log        |
+| git log &lt;remote_repo&gt;/&lt;remote_branch&gt;                          | remote           | check remote commits        |
+| git diff origin/&lt;branch&gt;                                             | remote & local   | check for remote changes    |
+| git pull origin &lt;branch&gt;                                             | remote --> local | merge remote changes        |
+| git push origin                                                            | local--> remote  | push my changes             | 
+| git tag -a &lt;release_name&gt; &lt;commit_hash&gt; -m &lt;tag_message&gt; | local            | tag a release               |
+| git push origin --tags                                                     | local --> remote | push tags to remote         |
+| git tag -l                                                                 | local            | list tags                   |
+| git reset --hard &lt;commit_hash&gt;                                       | remote --> local | rollback to previous commit |
+
 
