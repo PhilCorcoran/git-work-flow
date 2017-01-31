@@ -33,11 +33,12 @@ The following commands are used during the workflow. Any word enclosed in bracke
 | git log                                                                    | local            | check the commit log        |
 | git log &lt;remote_repo&gt;/&lt;remote_branch&gt;                          | remote           | check remote commits        |
 | git diff origin/&lt;branch&gt;                                             | remote & local   | check for remote changes    |
-| git pull origin &lt;branch&gt;                                             | remote --> local | merge remote changes        |
+| git pull --rebase origin &lt;branch&gt;                                    | remote --> local | get the latest remote changes and apply mine on top  |
 | git push origin                                                            | local--> remote  | push my changes             | 
 | git tag -a &lt;release_name&gt; &lt;commit_hash&gt; -m &lt;tag_message&gt; | local            | tag a release               |
 | git push origin --tags                                                     | local --> remote | push tags to remote         |
 | git tag -l                                                                 | local            | list tags                   |
 | git reset --hard &lt;commit_hash&gt;                                       | remote --> local | rollback to previous commit |
+| git rebase -i HEAD~&lt;count_of_commits&gt;                                | local            | squash commits into a bigger update |
 
 
